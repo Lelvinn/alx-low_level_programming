@@ -1,6 +1,7 @@
-#include <stdio.h>
+#include<stdio.h>
 /**
- * main - A program that printa line using the printf function
+ * main - Entry point
+ *
  * Return: 0
  */
 int main(void)
