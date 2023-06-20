@@ -1,28 +1,31 @@
-#include "main.h"
 #include <stdio.h>
-#include <math.h>
 
 /**
- * main - main block
- * Description: Print the sum of all multiples of 3 or 5 below 1024.
- * Return: 0
+ * main - computes and prints the sum of all the multiples
+ * of 3 or 5 below 1024
+ * Return: Always 0 (Success)
  */
-
 int main(void)
 {
-	int i = 1;
-	int total = 0;
+	unsigned long int a, b, c;
+	int i;
 
-	while (i < 1024)
+	a = 0;
+	b = 0;
+	c = 0;
+
+	for (i = 0; i < 1024; ++i)
 	{
-		if (i % 3 == 0)
-			total += i;
-		else if (i % 5 == 0)
-			total += i;
-
-		i++;
+		if ((i % 3) == 0)
+		{
+			a += i;
+		}
+		else if ((i % 5) == 0)
+		{
+			b += i;
+		}
 	}
-	printf("%d\n", total);
-
+	c = a + b;
+	printf("%lu\n", c);
 	return (0);
 }

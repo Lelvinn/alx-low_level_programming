@@ -1,35 +1,35 @@
 #include "main.h"
 
 /**
- * times_table - prints the 9 times table, starting with 0
+ * times_table - multiply
  */
 
 void times_table(void)
 {
-	int x, y, z;
+	int a, b, c;
 
-	for (x = 0; x < 10; x++)
+	for (a = 0; a < 10; a++)
 	{
-		for (y = 0; y < 10; y++)
+		for (b = 0; b < 10; b++)
 		{
-			z = x * y;
-			if (y == 0)
+			c = b * a;
+			if (b == 0)
 			{
-				_putchar(z + '0');
+				_putchar(c + '0');
 			}
-			if (z < 10 && y != 0)
+			if (c < 10 && b != 0)
 			{
 				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
-				_putchar(z + '0');
+				_putchar(c + '0');
 			}
-			else if (z >= 10)
+			else if (c >= 10)
 			{
 				_putchar(',');
 				_putchar(' ');
-				_putchar((z / 10) + '0');
-				_putchar((z % 10) + '0');
+				_putchar((c / 10) + '0');
+				_putchar((c % 10) + '0');
 			}
 		}
 		_putchar('\n');
